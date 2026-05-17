@@ -128,6 +128,6 @@ The best way to learn is to break things. Use these tools to see the concepts in
 * **[Ethereum.org Learn Hub](https://ethereum.org/en/learn/)**: The gold standard for documentation.
 * **[Ledger Academy](https://www.ledger.com/academy)**: Great for clear, high level explainers on keys and security.
 * **[EthHub](https://docs.ethhub.io/)**: Open source info on everything Ethereum.
-
+* **[3Blue1Brown – How Does Bitcoin Actually Work?](https://www.youtube.com/watch?v=bBC-nXj3Ng4&t=1301s)**: An excellent visual explanation of how Bitcoin, blockchain, mining, and cryptographic trust work under the hood
 
 *Good luck with Week 0! If you can wrap your head around these basics, the rest of the course will make much more sense.*
