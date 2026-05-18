@@ -1,0 +1,57 @@
+# Guide to Hashing
+
+Imagine your friend has a long name: **Muttiah Venkatasubramanian Chinnaswamy**. That is a massive name! It takes way too long to say, and it takes up half the page if you try to write it down.
+
+To solve this, you make up a **Rule** (this is what programmers call a **Hash Function**).
+
+### The Rule:
+> Take the **First Letter** of the first name,middle name and last name.
+
+Using this rule on **M**uttiah **V**enkatasubramanian **C**hinnamy, his "Hash" (Nickname) becomes **MVC**.
+
+## Properties of Hashing
+
+For this to work for a computer has to follow these strict rules:
+
+1. **It Never Changes:** Every time Muttiah is in the school, he is **MVC**. You don't call him "CVM" on Mondays and "VCS" on Tuesdays. It is 100% predictable.
+2. **Tiny Changes Matter:** If his brother **** **J**eevanatham Venkatasubramanian Chinnand joins the game, the rule sees the tiny change at the end of the name. His nickname instantly becomes **JVC**. Even a small change in the input creates a completely different nickname.
+3. **It's a Secret:** If you tell a stranger from another town, "Hey, **MVC** is playing today," they cannot guess his massive full name just from those three letters. The nickname protects the real, long name.
+
+---
+
+## 📏 Is the Nickname longer than the Name?
+**Almost never!** Think of it like an **Aadhaar card fingerprint**:
+* **The Person (Data):** A whole human being with a height, weight, long name, and clothes.
+* **The Fingerprint (Hash):** A tiny ink smudge or biometric scan that always stays the exact same size.
+
+Whether a computer is processing the data into a short, fixed-size code. This is why computers love hashing—it's way faster to look up a tiny "MVC" than searching through giant, complicated files!
+Also its difficult to decode for Hackers in case of attacks keeping your information safe 
+
+
+# Ripple Effect
+
+If we try to change a piece of data in Block #2, Block #3, #4, and #5 turns red (invalid) and it results in a fake transactions.
+
+In a Blockchain each box is connected to the one before it using a special code called a **Hash**. 
+
+When you change a single piece of data in an old block, you don't just change that one box—you break the entire chain. This is known as **The Ripple Effect**.
+
+---
+
+## How it works ?
+
+Suppose you have a chain of 5 blocks. Here is what happens if you try to "cheat" and change data in **Block #2**:
+
+1.  **Block #2 Self-Destructs:** The moment you change a single letter in Block #2, its **Hash** changes to something completely new.
+2.  **Block #3 Panics:** Block #3 stores a record of what Block #2's hash *used* to be. It looks back, sees the new hash, and says: *"It's different"* Block #3 is now invalid (it breaks).
+3.  **The Domino Falls:** Because Block #3 is now "broken," its *own* hash changes. 
+4.  **Block #4 Fails:** Block #4 looks at Block #3, sees the new broken hash, and it breaks too.
+5.  **The End of the Chain:** This continues all the way to **Block #5** and beyond.
+---
+
+
+## Advantages of it 
+This ripple effect is why we trust Blockchain for money (like Bitcoin) or important records. 
+* **Difficult to Hack:** If you tamper with one block, its hash instantly changes, causing all subsequent blocks to turn red and forcing the network to reject the fake transaction.
+* **Security :** You can't secretly change the past.
+* **Trust :** If the last block in the chain is "Green", you can be 100% sure that every single transaction before it is also perfect and untouched.
